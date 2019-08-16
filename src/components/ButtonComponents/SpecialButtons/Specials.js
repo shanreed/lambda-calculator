@@ -11,7 +11,7 @@ const Specials = (props) => {
   const [specialButtons, setSpecialButtons] = useState({specials})
 
   return (
-    <div className = 'special-buttons'> 
+    <div className = 'special-operators-container'> 
       {specials.map(special => (
         <SpecialButton buttonSpecial = {special} /> 
       ))}

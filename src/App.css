@@ -1,54 +1,153 @@
-.container {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+/* My Styles */
+.app-container {
     background-color: black;
     width: 24.7%;
+    height:700px;
     margin: 35px auto;
 }
 
 .App {
-    padding: 20px 0 0 10px;
-    background-color: #ba112e;
+    padding: 20px;
+    height: 700px;
+    background-color:purple;
     border-radius: 10%;
-}
-
-.operators {
     display: flex;
-    align-content: flex-end;
+    flex-direction: column;
 }
 
-.button {
- padding: 30px;
- border-radius: 50%;
+.inside-container {
+    /* background-color: blueviolet; */
+    margin-top: 20px;
+    
+    /* width: 80%; */
+   
 }
+
 
 .input {
     color: white;
-    padding: 30px;
+    padding: 60px;
     background-color: black;
-    border-radius: 40%;
-}
-
-.number-buttons{
-   width: 80%;
-}
-
-.special-buttons{
-    background-color: aqua;
     display: flex;
-    
+    justify-content: flex-end;
+    margin-top: 10px;
 }
 
-.special-buttons button {
-    height: 20%;
+.special-operators-container{
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px; 
+    margin: 0 auto;
 }
 
 .operator-buttons {
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
-    justify-items: flex-end;
     flex-direction: column;
-    width: 20%;
 }
 
 .operator-buttons button {
-    width: 20%;
+    margin-bottom: 20px;
 }
+
+
+
+
+.numbers-container{
+    /* background-color: orange; */
+    display:flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    margin: 0 auto;
+    margin-top: -355px;
+
+}
+
+
+.number-button {
+    
+    /* margin:5px; */
+    margin-right: 35px;
+    margin-bottom: 20px;
+   }
+
+
+   button {
+       padding: 20px;
+       border-radius: 50%;
+       color: white;
+       background-color: rgb(46, 46, 136);
+       font-size: 1.5rem;
+       
+   }
+
+   .number{
+    background-color: rgb(105, 105, 163);
+
+   }
+
+   .number:nth-last-child(2){
+       padding: 20px;
+       width:50%;
+       margin-right: 25px;
+       
+   }

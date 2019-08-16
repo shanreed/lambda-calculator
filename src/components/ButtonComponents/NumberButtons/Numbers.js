@@ -13,7 +13,7 @@ const Numbers = (props) => {
   
   
   return (
-    <div className = 'number-buttons'>
+    <div className = 'numbers-container'>
       {numbers.map(number => (
         <NumberButton buttonNumber = {number}/>
 

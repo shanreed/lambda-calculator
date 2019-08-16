@@ -6,8 +6,10 @@ import Specials from '../ButtonComponents/SpecialButtons/Specials';
 const Display = () => {
   return <div>
       <div className = 'input'>0</div>
+      <div className = 'inside-container'>
     <Specials   /> 
   <Numbers /> {/* Display any props data here */}
+  </div>
   </div>;
 };
 

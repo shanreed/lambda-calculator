@@ -17,14 +17,15 @@ function App() {
   // Don't forget to pass the functions (and any additional data needed) to the components as props
 
   return (
-    <div className="container">
+    <div className="app-container">
       
       <div className="App">
       <Logo />
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
+        
         <Display />
       </div>
-    </div>
+      </div>
   );
 }
 
